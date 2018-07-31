@@ -36,6 +36,7 @@ def get_all_podcasts(out_dir):
 
 
 if __name__ == '__main__':
+    n_workers = 8
     output_dir = os.path.join(os.getcwd(), 'res')
     podcasts = get_all_podcasts(output_dir)
-    exec_tasks(scrape_se_daily_podcast_tasks(podcasts, output_dir))
+    exec_tasks(scrape_se_daily_podcast_tasks(podcasts, output_dir), n_workers=n_workers)
