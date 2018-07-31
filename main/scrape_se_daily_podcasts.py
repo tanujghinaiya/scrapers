@@ -36,7 +36,6 @@ def get_all_podcasts(out_dir):
 
 
 if __name__ == '__main__':
-    # output_dir = os.path.join(os.getcwd(), 'res')
-    output_dir = '/media/tanuj/DE806F58806F3665/sed'
+    output_dir = os.path.join(os.getcwd(), 'res')
     podcasts = get_all_podcasts(output_dir)
     exec_tasks(scrape_se_daily_podcast_tasks(podcasts, output_dir))
