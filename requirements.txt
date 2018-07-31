@@ -1,0 +1,5 @@
+stem
+tqdm
+beautifulsoup4
+urllib3
+requests
